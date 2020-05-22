@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+
+/* Immagine di sfondo mare con sedia sdraio*/
+.bg_top {
+  background-image: url("https://www.travelfar.it/wp-content/uploads/Guida-delle-Maldive-il-relax-sul-mare.jpg");
+  position:relative;
+  height: 700px; 
+  width: 100%;
+  background-attachment:fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+ 
+/* NAVBAR */
+.navbar {
+  position:absolute;
+  width: 100%;
+  height: 40px;
+  background-color: #004fcb;
+  overflow: auto;
+ 
+}
+
+
+.navbar a{
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links con mouse-over */
+.navbar a:hover {
+  background-color: #366fe8;
+}
+
+/* Navbar link attivo*/
+.active {
+  background-color: #72a1ff;
+}
+
+
+
+
+/* /* MENU LATERALE*/ 
+
+/* #mySidenav a { */
+/*   position: absolute; Position them relative to the browser window */
+/*   left: -150px; Position them outside of the screen   */
+/*   transition: 0.3s; Add transition on hover */
+/*   padding: 15px; 15px padding */
+/*   width: 150px; Set a specific width */
+/*   text-decoration: none; Remove underline */
+/*   font-size: 20px; Increase font size */
+/*   color: white; White text color */
+/*   border-radius: 0 5px 5px 0; Rounded corners on the top right and bottom right side */
+/*   z-index:1; */
+/* } */
+
+/* #mySidenav a:hover { */
+/*   left: 0; On mouse-over, make the elements appear as they should */
+/* } */
+
+/* /* The about link: 20px from the top with a green background */ 
+/* #opzione1 { */
+/*   top: 140px; */
+/*   background-color: #a7f0ff; */
+
+/* } */
+/* #opzione2 { */
+/*   top: 200px; */
+/*   background-color: #1a70f0;  */
+  
+/* } */
+/* #opzione3 { */
+/*   top: 260px; */
+/*   background-color: #a7f0ff;  */
+/* } */
+/* #opzione4 { */
+/*   top: 340px; */
+/*   background-color: #1a70f0; */
+  
+/*   } */
+/* Parte centrale */
+
+.bordo_div{
+	
+	border: 2px ;
+	border-color:"transparent";
+	border-style: outset;
+	padding: 15px;
+	border-radius: 5px 5px 5px 5px ;
+	background-image: linear-gradient(to top right, #FFFFFF 0%, #AACFEF 100%);
+	background-color:#adddea ;
+	
+	
+}
+.bordo_div:hover{
+	border: 2px ;
+	
+	opacity:0.85;
+	border-style: outset;
+	padding: 10px;
+	border-radius: 5px 5px 5px 5px ;
+	background-color:white ;
+	transform: scale(1.1); 
+}
+
+.trasp_img {
+        margin-right:15px;
+        width:28%;
+        text-align:center;
+        opacity:0.5;
+        transition: opacity 2s linear;
+        position: relative; 
+	    overflow: hidden; 
+	    margin:40px;
+	    float:left;
+    }
+.trasp_img:hover{
+    opacity:1;
+    transform: scale(1.05); 
+}
+
+
+.trasp_img p {
+     position: relative; 
+     left: 0; 
+     opacity:0.3;
+     bottom: 0; 
+	 color: black; 
+     display: none;   
+     font-family: Sofia;
+     font-size: 25px;
+}
+.trasp_img:hover p{	
+	display:block;
+	opacity:1;
+	z-index:1;
+}
+
+
+/*posizionamento_1_colonna*/
+.posizionamento_1_colonna{
+	position: relative;
+	width: 40%;	
+	float: left;
+	left:5%;
+	padding: 35px;
+	
+}
+.posizionamento_2_colonna{
+	position: relative;
+	width: 40%;
+	top: 70px;
+	float: right;
+	right: 5%;
+	padding: 35px;
+}	
+
+
+
+.sfondo_centro{
+
+	 background-image: url(https://www.donnad.it/sites/default/files/styles/r_visual_d/public/201732/citazioni-mare-frasi.jpg?itok=toWe9HmL);
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+}
+
+
+/* Parte bassa */
+
+.footer-bottom{
+	position: absolute;
+	bottom:-2200px;
+	float: bottom;
+	width: 100%;
+	height: 250px; 
+	background-color: #004fcb;
+	color: white;
+
+}
+
+.posizionamento_riga_dx{
+	position: relative;
+	width: 33%;
+	padding: 10px;
+}
+.posizionamento_riga_centrale{
+	position: relative;
+	width: 33%;
+	top: -125px;
+	left: 35%;
+	padding: 10px;
+}
+.posizionamento_riga_sx{
+	position: relative;
+	width: 33%;
+	top: -276px;
+	left: 70%;
+	padding: 10px;
+}
+.posizionamento_riga_centrale a:link {
+  background-color: none;
+  color: white;
+}
+
+/* ------Scelta lingua------- */
+.dropbtn {
+  background-color: #004fcb;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #366fe8;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #72a1ff;
+  min-width: 16px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+
+}
+
+.dropdown a:hover {background-color: #366fe8;}
+
+.show {display: block;}
+
+
+.riuso{
+	  position: absolute;
+	background-color:red;  
+	width: 100%;
+	height: 100%; 
+	
+}
+
+
+
+
+
