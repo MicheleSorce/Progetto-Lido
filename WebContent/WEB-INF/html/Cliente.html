@@ -6,11 +6,26 @@
 <title>HomeCliente</title>
 <link Rel="icon" type="image/ico" href="../immagini/logo.png"> <!-- per il logo in alto -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"><!-- per la scrittua in alto -->
-<link href="../css/CLienteCSS.css" type="text/css" rel="stylesheet">
+<link href="../css/ClienteCSS.css" type="text/css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- Per il navbar -->
+
 <script src="https://code.jquery.com/jquery-3.4.0.min.js" type="text/javascript"></script>
 
 <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
 
 	function myFunction() {
 	  document.getElementById("myDropdown").classList.toggle("show");
@@ -43,10 +58,11 @@
 	   // });
 	  }
 
+	  
 </script>
 
 </head>
-<body class=”it” style="position:static;">
+<body class=”it” >
 
 
 
@@ -74,17 +90,17 @@
 	</div>
 
 	<div id="mySidenav_left" class="sidenav">
-	  <a href="#" id="opzione1">Ristorazione</a>
-	  <a href="#" id="opzione2">Attività</a>
-	  <a href="#" id="opzione3">Offerte</a>
-	  <a href="#" id="opzione4">Opzione4</a>
+	  <a href="#" id="opzione1">Prenotazione Ombrellone</a>
+	  <a href="#" id="opzione2">Prenotazione Pedalò</a>
+	  <a href="#" id="opzione3">Modifica Prenotazione</a>
+	  <a href="#" id="opzione4">Elimina Prenotazione</a>
 	</div>
 
 	<div id="mySidenav_right" class="sidenav">
-	  <a href="#" id="opzione5">Ristorazione</a>
-	  <a href="#" id="opzione6">Attività</a>
-	  <a href="#" id="opzione7">Offerte</a>
-	  <a href="#" id="opzione8">Opzione4</a>
+	  <a href="#" id="opzione5">Ordine </br> Bar</a>
+	  <a href="#" id="opzione6">Riepilogo Costo Servizi</a>
+	  <a href="#" id="opzione7">Ordine Doccia</a>
+	  <a href="#" id="opzione8">Riepilogo Costo Ombrellone</a>
 	</div>
 	
 
@@ -95,91 +111,81 @@
 	</div>
 </div>
 
-
-<div style="text-align:center ;" >
+<br />
+<div style="text-align:center">
 	<hr width="300px"/><div><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></div> <br/>
-	<em>Scegli tutte le operazioni che vuoi fare </em><br /> <br />
+	<em>Relax, mare, natura, cultura e divertimento in un’unica, completa, soluzione. </em><br /> <br />
 	<i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
 	<hr width="300px"/>
 </div>	
-
+<br />
 
 
     
- <!-- inizio parte centrale -->
  
-<div  class="sfondo_centro" >
-	
-	<div id="scelta_ombrellone"  class="posizionamento_1_colonna"  >
-		<div class="bordo_div" >
-			<h3 style="font-family:Sofia; font-size: 25px;"><em>Scegli tu il tuo ombrellone!</em></h3>
-			<hr color="#1a70f0"/>
-			<p style="font-variant: small-caps">Clicca qui per scegliere il tuo ombrellone sulla mappa.</p>
-		</div> 
-		<br />
-		<div id="ordine_bar" class="bordo_div"  >
-			
-			<h3 style="font-family:Sofia; font-size: 25px;"><em>Ordine Bar</em></h3>
-			<hr color="#1a70f0"/>
-			<p style="font-variant: small-caps">Clicca qui per prenotare il tuo pranzo o il tuo spuntino <br />Il tuo ordine sarà servito alla postazione non appena pronto!!</p>
-		</div>
-		<br />
-		<div id="ordine_doccia" class="bordo_div">
-			<br />
-			<h3 style="font-family:Sofia; font-size: 25px;"><em>Ordine Doccia</em></h3>
-			<hr color="#1a70f0"/>
-			<p style="font-variant: small-caps">Clicca qui per prenotare il tuo momento di relax <br /> Scegli l'ora tra quelle disponibili.</p>
-		</div>
-	</div>
+<br /><br />
+ <div  class="contenitore" >
+ <a id="surfista"style="font-size:50px;z-index:1;position:absolute;top:5px;left: 990px"> &#127940;&#8205;&#9794;&#65039; </a>
+ <a id="barchetta" class="img_ombrellone"style="font-size:50px;z-index:1;position:absolute;top:-3px;left:125px"> &#128675;</a>
+ <a id="runner" style="font-size:50px;z-index:1;position:absolute;top:75px;left:390px">&#127939;  </a>
+ <a id="granchio1" style="font-size:15px;z-index:1;position:absolute;top:110px;left:990px"> &#129408; </a>
+<a id="granchio2" style="font-size:15px;z-index:1;position:absolute; top:120px;left:1010px"> &#129408; </a>
 
-	<div  id="riepilogo_costi_servizi" class="posizionamento_2_colonna">
-		<div class="bordo_div">
-			<h3 style="font-family:Sofia; font-size: 25px;"><em>Riepilogo Costi Servizi</em></h3>
-			<hr color="#1a70f0"/>
-			<p style="font-variant: small-caps">Qui saranno addebbitati i costi relativi al servizio bar e/o spiaggia (pedalò). <br />
-		
-		</div>
-		<br />
-		<br />
-		<div id="caso_imprevisti"  class="bordo_div">
-			
-			<h3 style="font-family:Sofia; font-size: 25px;"><em>Caso imprevisti!</em></h3>
-			<hr color="#1a70f0"/>
-			<p style="font-variant: small-caps"> Clicca qui per modificare o eliminare la tua prenotazione<br />
-			
-		</div>
-				<br />
-		<br />
-		<div id="riepilogo_costi_ombrelloni" class="bordo_div">
-			
-			<h3 style="font-family:Sofia; font-size: 25px;"><em>Riepilogo Costi Ombrelloni</em></h3>
-			<hr color="#1a70f0"/>
-			<p style="font-variant: small-caps"> Qui saranno addebbitati i costi relativi al servizio Ombrellone<br />
-			
-		</div>
-	</div >
+<a id="ombrellone1" class="img_ombrellone"style="font-size:60px;z-index:1;position:absolute;top:230px;left: 80px">&#9969;&#65039;</a>
+<a id="ombrellone2" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:230px;left:240px">&#9969;&#65039;</a>
+<a id="ombrellone3" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:230px;left:400px">&#9969;&#65039;</a>
+<a id="ombrellone4" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:230px;left:720px">&#9969;&#65039;</a> 
+<a id="ombrellone5" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:230px;left:870px">&#9969;&#65039;</a>
+<a id="ombrellone6" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:230px;left:1020px">&#9969;&#65039;</a>
 
-</div >
+<a id="ombrellone7" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:370px;left: 80px">&#9969;&#65039;</a>
+<a id="ombrellone8" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:370px;left:240px">&#9969;&#65039;</a>
+<a id="ombrellone9" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:370px;left:400px">&#9969;&#65039;</a>
+<a id="ombrellone10" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:370px;left:720px">&#9969;&#65039;</a> 
+<a id="ombrellone11" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:370px;left:870px">&#9969;&#65039;</a>
+<a id="ombrellone12" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:370px;left:1020px">&#9969;&#65039;</a>
 
-<!-- fine parte centrale -->
-   	
-  
-   	
-   	
+<a id="ombrellone13" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:510px;left:240px">&#9969;&#65039;</a>
+<a id="ombrellone14" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:510px;left:400px">&#9969;&#65039;</a>
+<a id="ombrellone15" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:510px;left:720px">&#9969;&#65039;</a> 
+<a id="ombrellone16" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:510px;left:870px">&#9969;&#65039;</a>  
+ 	
+<a id="ombrellone17" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:680px;left:80px">&#9969;&#65039;</a> 	
+<a id="ombrellone18"class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:680px;left:240px">&#9969;&#65039;</a> 
+<a id="ombrellone19" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:680px;left:720px">&#9969;&#65039;</a> 	
+<a id="ombrellone20" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:680px;left:870px">&#9969;&#65039;</a> 
 
-	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-	
 
- <div  class="riuso">
-   
-	   <div >
-	  	 <img src="../immagini/mappa_vuota.jpg" style=" position:relative ;  padding-left:17%" width="65%" height="90%">
-	   </div>
-	</div>
+<a id="ombrellone21" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:820px;left:80px">&#9969;&#65039;</a> 
+<a id="ombrellone22" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:820px;left:240px">&#9969;&#65039;</a> 
+<a id="ombrellone23" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:820px;left:720px">&#9969;&#65039;</a> 	
+<a id="ombrellone24" class="img_ombrellone" style="font-size:60px;z-index:1;position:absolute;top:820px;left:870px">&#9969;&#65039;</a>  
+</div>
 <br />
-		
+
+
+
+
+ 
+
+<!-- <br /> -->
+<!-- <div style="text-align:center"> -->
+<!-- 	<hr width="300px"/><div><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></div> <br/> -->
+<!-- 	<em>I nostri servizi </em><br /> <br /> -->
+<!-- 	<div class="w3-content w3-section" style="max-width:500px; position:relative; margin-left:35%"> -->
+<!-- 	  <img  src="../immagini/vacanze-al-mare-800x400.jpg" style="width:100%; "> -->
+<!-- <!-- 	  <img class="mySlides" src="../immagini/ragazza.jpg" style="width:100%"> --> 
+<!-- <!-- 	  <img class="mySlides" src="../immagini/vacanze-al-mare-800x400.jpg"  style="width:100%"> --> 
+<!--  	</div>  -->
+<!--  <br/> -->
+<!-- 	<i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i> -->
+<!-- 	<hr width="300px"/> -->
+<!-- </div>	 -->
+<!-- <br /> -->
+
+
+
+<br />
 <div id="finale" class="footer-bottom" style="font-variant: small-caps; ">
 
     <h2  > Contatti</h2>
