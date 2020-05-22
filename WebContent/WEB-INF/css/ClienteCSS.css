@@ -21,9 +21,9 @@
 	border-style: none;
 	padding: 10px;
 	border-radius: 5px 5px 5px 5px ;
-/* 	background-color:#6fff45 ; libero */
+ 	background-color:#6fff45 ; 
 /* 	background-color:#ff0700 ; occupato */
-	transform: scale(1.5); 
+	transform: scale(1.1); 
 }
  
 /* NAVBAR 2*/
