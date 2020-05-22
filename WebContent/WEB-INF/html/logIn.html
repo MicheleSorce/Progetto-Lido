@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title >Accedi a ...</title>
+    <link Rel="icon" type="image/ico" href="../immagini/logo.png">
+   
+<style type="text/css">
+body{
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #dfedfa;
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+div{
+
+	
+	padding: 10px;
+	margin-top: 5px;
+}
+	.metaDati{
+		color:black;
+		background-color: white;
+		text-align: left;
+	}
+
+	#principale{
+		background-image: url("../immagini/spiaggia1.jfif.jpeg") ;
+		min-height: 500px;
+		min-width: 900px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	    position: relative;
+
+
+	}
+		#accesso{
+			  position: relative;
+			  left: 65%;
+			  margin: 20px;
+			  max-width: 350px;
+			  padding: 16px;
+			  background-color: rgba(0,0,0, 0.6); 
+  			  color: white;
+ 		      
+		}
+			#logIn{
+				padding: 15px;
+				padding-top:5px;
+				margin-top:5px;
+				text-decoration:none; 
+				background-color: rgba(0,0,0); 
+			}
+			#registrazione{
+				margin-top: 20px;
+				background-color: rgba(0,0,0); 
+			}
+
+input,button {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+button{
+  background-color: #3333FF;
+  color:white;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+}
+button:hover{
+  background-color: #0000FF;
+}
+
+
+a{
+	text-decoration: none;	
+	color: blue;
+}
+a:hover {
+	text-decoration: underline;
+	color: #3366FF;
+}
+#logo{
+	width: 50px;
+	height: 50px;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+	$('#id').keypress(function (e) {
+		  if (e.which == 13) {
+		    $('#password').focus();
+		    return false;  
+		  }
+	});
+	$('#password').keypress(function (e) {
+		  if (e.which == 13) {
+		    $('#accedi').focus();
+		    return false;  
+		  }
+	});
+});
+</script>
+</head>
+<body>
+
+<div id="container">
+
+<div id="intestazione" class="metaDati">
+ <span style="font-variant: small-caps">Dati relativi all'intestazione</span>
+</div>
+
+<div id="principale">
+
+	<div id="accesso" class="princ" >
+		<div id="logIn">
+			<img alt="logo" src="../immagini/logo.png"id="logo">
+			<h3>Accedi a...</h3>
+			<input type="text" name="Inserisci e-mail" id="id" placeholder="E-mail o nome utente"><br>
+			<input type="text" name="Password" id="password" placeholder="password" ><br>
+			<button id="accedi">Accedi</button><br>
+			<hr>
+			<a href="">hai dimenticato la password?</a><!-- inserire immagini app -->
+		</div>
+		
+		<div id="registrazione">
+			<i>Non hai un account?</i>
+			<a href="Registrazione.html">registrati</a><!-- inserisci form registrzione -->
+		</div>
+	</div>
+</div>
+
+<div id="informazionni" class="metaDati">
+	 <span style="font-variant: small-caps">Informazioni Assistenza Servizio</span>
+</div>
+</div>
+
+
+
+</body>
+</html>

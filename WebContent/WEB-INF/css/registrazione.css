@@ -1,0 +1,43 @@
+body{
+	text-align: left;
+	background: fixed;
+	background-image: url("../immagini/spiaggia.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#principale{
+	
+  	background-color: rgba(0,0,0, 0.6); 
+ 	color: white;
+	width: 50%;
+	position: relative;
+	left: 25%;
+	padding: 25px;
+	position: relative;
+	max-width: 800px;
+
+}
+	#datiAnag,#datiGener{
+	 background: rgba(0,0,0);
+	 padding: 20px;
+	
+	}
+		input {
+		  margin: 5px 0 22px 0;
+		  border: none;
+		  background: #303030;
+		  color: white;
+		  
+		}
+		input:hover{
+			border-bottom:2px solid #0099FF;
+		}
+	.pulsanti {
+		border-color: #00FF99;
+	}
+	
+	.pulsanti:hover {
+		background-color: #00FF99;
+		color: black;
+	}

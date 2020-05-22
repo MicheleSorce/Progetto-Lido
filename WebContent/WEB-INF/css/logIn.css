@@ -1,0 +1,100 @@
+body{
+  position: relative;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #dfedfa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div{
+
+	padding: 10px;
+	margin-top: 5px;
+}
+	.metaDati{
+		color:white;
+		background-color: #1a70f0;
+		text-align: left;
+		border: 2px solid blue;	
+	}
+
+	#principale{
+		background-image: url("../immagini/spiaggia1.jfif") ;
+		min-height: 600px;
+		min-width: 900px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+		#accesso{
+			  position: relative;
+			  left: 65%;
+			  margin: 20px;
+			  max-width: 450px;
+			  max-height:900px;
+			  padding: 25px;
+			  background-color: rgba(0,0,0, 0.6); 
+  			  color: white;
+ 		}
+			#logIn{
+				padding: 15px;
+				padding-top:5px;
+				margin-top:5px;
+				text-decoration:none; 
+				background-color: rgba(0,0,0); 
+			}
+			#registrazione{
+				margin-top: 20px;
+				background-color: rgba(0,0,0); 
+			}
+
+input,button {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #303030;
+  color: white;
+}
+button{
+  background-color: #1a70f0;
+  color:white;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+}
+button:hover{
+  background-color: #0000FF;
+}
+input:hover{
+	border-bottom:2px solid #0099FF;
+}
+
+a{
+	text-decoration: none;	
+	color: blue;
+}
+a:hover {
+	text-decoration: underline;
+	color: #3366FF;
+}
+#logo{
+	width: 50px;
+	height: 50px;
+}
+
+.eye{
+	position: absolute;
+	right: 10px;
+}
+#password{
+	width: 94%;
+	position: left;
+}
+#hide1{
+	display: none;
+}

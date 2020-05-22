@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+	
+	$('#nome').keypress(function (e) {
+		  if (e.which == 13) {
+		    $('#cognome').focus();
+		    return false;  
+		  }
+	});
+	$('#cognome').keypress(function (e) {
+		  if (e.which == 13) {
+		    $('#telefono').focus();
+		    return false;  
+		  }
+	});
+	$('#telefono').keypress(function (e) {
+		  if (e.which == 13) {
+		    $('#email').focus();
+		    return false;  
+		  }
+	});
+	$('#email').keypress(function (e) {
+		  if (e.which == 13) {
+		    $('#password').focus();
+		    return false;  
+		  }
+	});
+	
+
+	$('#password').keypress(function (e) {
+		  if (e.which == 13) {
+			
+		    $('#confermaPassword').focus();
+		    return false;  
+		  }
+	});	
+ 
+	$('#confermaPassword').keypress(function (e) {
+		  if (e.which == 13) {
+			
+			  $('#date').focus();
+			    return false;
+
+		  }
+	});
+
+	$("#confermaPassword").blur(function(){
+		 var ck_password = /^[A-Za-z0-9]{8,12}$/;// controllo sulla validità della password
+		 var password = document.getElementById("password").value;
+		 var confermapassword = document.getElementById("confermaPassword").value;	  
+		 		 
+		  // controllo sugli input password
+		  if (!ck_password.test(password)) {
+				document.getElementById("print").innerHTML= "La password deve contenere almeno 8 e massimo 12 caratteri alfanumerici.";
+				$('#password').css("borderColor","red");
+				$('#password').focus();
+				return false; 
+		  }
+		  if (confermapassword != password) {
+			  document.getElementById("print").innerHTML= "Le password non coincidono.";
+			  $('#confermaPassword').css("borderColor","red");
+			  $('#confermaPassword').focus();
+			  return false; 
+		  }
+		  if(confermapassword == password && ck_password.test(password)){
+			  document.getElementById("print").innerHTML= "";
+			    $('#password').css("borderColor","");
+			    $('#confermaPassword').css("borderColor","");
+				$('#date').focus();
+				return false; 
+		  }
+
+	});
+	
+	$('#date').keypress(function (e) {
+		  if (e.which == 13) {
+		    $('#sessoM').focus();
+		    return false;  
+		  }
+	});
+	$('#sessoM').keypress(function (e) {
+		  if (e.which == 13) {
+		  	$('#submit').focus();
+		    return false;  
+		  }
+	});
+	
+
+  
+});
+
+</script>
+<style type="text/css">
+body{
+	text-align: center;
+	background: fixed;
+	background: no-repeat;
+	background-image: url("../immagini/spiaggia.jpg");
+
+	
+}
+#principale{
+	 
+	background-color: rgb(0,0,0); /* Fallback color */
+  	background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+ 	color: white;
+ 	font-weight: bold;
+	width: 50%;
+	position: relative;
+	left: 25%;
+	padding: 25px;
+
+}
+input:hover{
+	border-color: #00FF99;
+}
+.pulsanti {
+	border-color: #00FF99;
+}
+
+.pulsanti:hover {
+	background-color: #00FF99;
+	color: black;
+}
+
+</style>
+<meta charset="ISO-8859-1">
+	<title>Registrati a ...</title>
+    <link Rel="icon" type="image/ico" href="../immagini/logo.png">
+</head>
+<body>
+<div id="principale">
+<img alt="logo" src="../immagini/logo.png" id="logo" width="100px" height="100px" >
+<h1>Registrati a ... </h1>
+<hr>
+<form>
+
+ <span style="font-variant: small-caps">Nome </span><br /><input type="text" name="nome"id="nome" placeholder="Mario"><br />
+ <span style="font-variant: small-caps">Cognome</span><br /><input type="text" name="cognome" id="cognome" placeholder="Rossi"><br />
+ <span style="font-variant: small-caps">Telefono</span><br /><input type="text" name="telefono" id="telefono" placeholder="+39 ..."><br />
+ <span style="font-variant: small-caps">E-mail</span><br /><input type="email" name="email" required="required" id="email" placeholder="mario.rossi@gmail.com"><br />
+ <span style="font-variant: small-caps">Password</span><br /><input type="password" name="password" id="password" required="required"><br />
+ <span style="font-variant: small-caps">Conferma Password</span><br /><input type="password" name="confermaPassword" id="confermaPassword"><br />
+<p id="print" style="color: red;font-size:x-small;"></p>
+
+<fieldset>
+<legend>Dati anagrafici</legend>
+<span style="font-variant: small-caps">Data di nascita</span><br /> <input type="date" name="data do nascita" id="date"><br /><br />
+<span style="font-variant: small-caps">Sesso:</span><br>
+<input style="font-style: " type="radio" name="genere" value="maschio" id="sessoM">Maschio
+<input type="radio" name="genere" value="femmina">Femmina
+<input type="radio" name="genere" value="altro">Altro
+</fieldset><br />
+
+<hr>
+<br />
+<input type="reset"value="Resetta" class="pulsanti">
+<input type="submit" value="Iscriviti" id="submit" class="pulsanti">
+
+</form>
+</div>
+</body>
+</html>
