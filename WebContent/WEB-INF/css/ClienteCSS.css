@@ -98,8 +98,8 @@
   color: white; /* White text color */
   border-radius:  5px 0 0 5px ; /* Rounded corners on the top right and bottom right side */
 }
-#mySidenav_left a:hover {
-  left: 0; /* On mouse-over, make the elements appear as they should */
+#mySidenav_right a:hover {
+  right: 0; /* On mouse-over, make the elements appear as they should */
 }
 
 
