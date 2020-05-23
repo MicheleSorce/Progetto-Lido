@@ -10,7 +10,7 @@ body{
   position:relative;
   height: 700px; 
   width: 100%;
-  background-attachment:fixed;
+  background-attachment:scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +24,7 @@ body{
  
 /* NAVBAR */
 .navbar {
-  position:fixed;
+  position:absolute;
   width: 98%;
   height: 50px;
   background-color: transparent;

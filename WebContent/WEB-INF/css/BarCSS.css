@@ -10,7 +10,7 @@ body{
   position:relative;
   height: 700px; 
   width: 100%;
-  background-attachment:fixed;
+  background-attachment:scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,12 +69,13 @@ body{
 /* NAVBAR */
 .navbar {
   position:fixed;
-  width: 98%;
+  width: 96%;
   height: 50px;
   background-color: trasparent;
   overflow: auto;
   z-index:1;
 }
+
 
 /* Navbar links */
 .navbar a{
