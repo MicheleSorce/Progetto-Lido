@@ -119,6 +119,12 @@ body{
 	transform: scale(1.1); 
 }
 
+.txt_hover:hover{
+
+	 transition: 2s;
+	transform: scale(1.1); 
+}
+
 .trasp_img {
         margin-right:15px;
         width:28%;

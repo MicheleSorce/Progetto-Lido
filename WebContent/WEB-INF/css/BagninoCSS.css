@@ -3,9 +3,9 @@
 
 /* Immagine di sfondo mare con sedia sdraio*/
 .bg_top {
-  background-image: url("https://www.travelfar.it/wp-content/uploads/Guida-delle-Maldive-il-relax-sul-mare.jpg");
+  background-image: url("https://www.formazione.divingservice.info/wp-content/uploads/2016/06/bagnini2a-1170x780.png");
   position:relative;
-  height: 700px; 
+  height: 500px; 
   width: 100%;
   background-attachment:scroll;
   background-position: center;
@@ -32,17 +32,32 @@
 /* 	background-color:#ff0700 ; occupato */
 	transform: scale(1.1); 
 }
+
+.ristorante:hover{
+	border: none ;
+	border-radius: 5px 5px 5px 5px;
+	transition: 0.2s;
+	border-style: none;
+	padding: 5px;
+	border-radius: 5px 5px 5px 5px ;
+ 	
+
+	transform: scale(1.1); 
+}
+
  
 /* NAVBAR 2*/
+
+
 .navbar {
-  position:fixed;
+  position:absolute;
   width: 100%;
   height: 40px;
   background-color: #004fcb;
   overflow: auto;
-  z-index: 3;
  
 }
+
 
 /* Navbar links con a */
 
@@ -98,48 +113,12 @@
   background-color: #1a70f0; 
   
 }
+
 #opzione3 {
   top: 270px;
   background-color: #a7f0ff; 
 }
 #opzione4 {
-  top: 330px;
-  background-color: #1a70f0;
-  
-  }
-  
-#mySidenav_right a {
-  position: fixed; /* Position them relative to the browser window */
-  right: -73px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 8px; 
-  width: 100px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
-  border-radius:  5px 0 0 5px ; /* Rounded corners on the top right and bottom right side */
-  z-index: 3;
-}
-#mySidenav_right a:hover {
-  right: 0; /* On mouse-over, make the elements appear as they should */
-}
-
-
-#opzione5 {
-  top: 150px;
-  background-color: #a7f0ff;
-
-}
-#opzione6 {
-  top: 210px;
-  background-color: #1a70f0; 
-  
-}
-#opzione7 {
-  top: 270px;
-  background-color: #a7f0ff; 
-}
-#opzione8 {
   top: 330px;
   background-color: #1a70f0;
   
@@ -200,17 +179,7 @@
 	
 }
 
-.ristorante:hover{
-	border: none ;
-	border-radius: 5px 5px 5px 5px;
-	transition: 0.2s;
-	border-style: none;
-	padding: 5px;
-	border-radius: 5px 5px 5px 5px ;
- 	
 
-	transform: scale(1.1); 
-}
 
 
 

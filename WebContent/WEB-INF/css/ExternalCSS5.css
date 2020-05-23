@@ -13,6 +13,18 @@
   background-size: cover;
   
 }
+
+.ristorante:hover{
+	border: none ;
+	border-radius: 5px 5px 5px 5px;
+	transition: 0.2s;
+	border-style: none;
+	padding: 5px;
+	border-radius: 5px 5px 5px 5px ;
+ 	
+
+	transform: scale(1.1); 
+}
  
 /* NAVBAR */
 .navbar {
