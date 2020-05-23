@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 body{
-	
-	background-color: rgba(0,0,0, 0.4);
+	background-color:#654321;
+	/*background-color: rgba(0,0,0, 0.4);*/
 }
 /* Immagine di sfondo mare con sedia sdraio*/
 .bg_top {
@@ -18,18 +18,58 @@ body{
 }
 .txt_hover:hover{
 
-	 transition: 2s;
+	transition: 2s;
 	transform: scale(1.1); 
 }
 
 .descrizione{
  background-color: rgba(0,0,0, 0.5);
 }
+ /* ------Scelta lingua------- */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+ /*background-color: rgba(0,0,0, 0.9);*/
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: transparent;
+  min-width: 16px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+
+}
+
+.dropdown a:hover {color: rgba(0,0,0, 0.9);}
+
+.show {display: block;}
+ 
  
 /* NAVBAR */
 .navbar {
   position:fixed;
-  width: 100%;
+  width: 98%;
   height: 50px;
   background-color: trasparent;
   overflow: auto;
@@ -40,7 +80,7 @@ body{
 .navbar a{
   float: left;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
   color: white;
   text-decoration: none;
   font-size: 17px;
@@ -48,13 +88,15 @@ body{
 
 /* Navbar links on mouse-over */
 .navbar a:hover {
-  background-color:rgba(0,0,0, 0.9);
+ /* background-color:rgba(0,0,0, 0.9);*/
+  color:gray;
 }
 
 /* Current/active navbar link */
 .active {
-  background-color: gray;
+  background-color: #C0C0C0;
 }
+
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
